@@ -29,17 +29,6 @@
 
 ---
 
-## Description
-
-<p>Hands down, the most popular API project for beginners must be the weather app API. We will build the weather app using javascript and ReactJS hooks, async/await as well as AXIOS and CSS modules!</p>
-
-<p>The ReactJS Weather API Challenge will not only include working with more complex response, but it comes with a twist. Often times APIs aren't perfectly "fitting" into what the interface expects, so this challenge took a bit of a different direction and is about making some data manipulation before showing it to the user! And it's my ultimate favourite part about it!</p>
-
-<p>You will learn how to use Hooks in ReactJS, how to create your own custom ones too, we refactor some functions and check that our code doesn't break depending on the response we're getting from the API. It's gonna be fun and challenging, but don't give up!</p>
-
-<p>Feel free to try out first yourself or jump on the YouTube video from the start, find what works best fo you and enjoy! 🐣
-</p>
-
 ### Tech stack
 
 ```
@@ -50,16 +39,6 @@ Core:
 
 Communication tool:
 - axios
-```
-
-### Prerequisites
-
-```
-Knowledge level:
-basic understanding of HTML, CSS and JavaScript
-
-Tech:
-a computer/laptop to copy the files to with a code editor of your choice
 ```
 
 ## Preview
