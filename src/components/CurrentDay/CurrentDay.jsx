@@ -5,7 +5,7 @@ import locationIcon from './assets/location-map.png';
 import styles from './CurrentDay.module.css';
 
 const CurrentDay = ({
-    weekday, date, location, temperature, weatherIcon, weatherDescription,
+    weekday, date, year, location, temperature, weatherIcon, weatherDescription,
 }) => (
     <div className="d-flex">
         <div className={styles.img}></div>
@@ -13,7 +13,8 @@ const CurrentDay = ({
         <div className={`${styles.cardInner} d-flex flex-column justify-content-between pt-3 pb-2 pl-2`}>
             <div>
                 <h2 className="font-weight-bold mb-1">{weekday}</h2>
-                <p className="mb-0">{date}</p>
+                <p className="mb-0">{date}</p>{" "}
+                <p className="mb-0">{year}</p>
                 <p className="d-flex align-items-baseline font-weight-lighter mb-1" >
                     <img width="42" height="42" src={locationIcon} className="mr-1" alt="location pin icon" />
                     <span >{location}</span>
