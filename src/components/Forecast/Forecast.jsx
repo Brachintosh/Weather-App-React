@@ -6,10 +6,15 @@ import { Container, Row, Col } from 'react-bootstrap';
 import CurrentDay from '../CurrentDay';
 import CurrentDayDescription from '../CurrentDayDescription';
 import UpcomingDaysForecast from '../UpcomingDaysForecast';
+import Redirect from '../Redirect/Redirect';
 
 import styles from './Forecast.module.css';
 
-const Forecast = ({forecast}) => (
+
+const Forecast = ({forecast}) => {
+
+    return (
+
     <Container className={styles.box}>
         
         <Row>
@@ -21,11 +26,16 @@ const Forecast = ({forecast}) => (
             <Col xs={12} md={8} className="d-flex flex-column justify-content-between">
                 <CurrentDayDescription forecast={forecast.currentDayDetails} />
                 <UpcomingDaysForecast  days={forecast.upcomingDays} />
+                
+                {/* REDIRECT BTN */}
+                <Redirect />
+
             </Col>
         </Row>
 
+
     </Container>
-);
+)};
 
 Forecast.propTypes = {
     forecast: PropTypes.shape({
