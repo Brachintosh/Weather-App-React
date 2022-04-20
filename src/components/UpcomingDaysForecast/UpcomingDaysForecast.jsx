@@ -20,6 +20,7 @@ UpcomingDaysForecastItem.propTypes = {
     weekday: PropTypes.string.isRequired,
     temperature: PropTypes.string.isRequired,
     imgUrl: PropTypes.string.isRequired,
+    
 };
 
 export default UpcomingDaysForecastItem;
