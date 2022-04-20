@@ -17,7 +17,7 @@ const CurrentDay = ({
                 <p className="mb-0">{year}</p>
                 <p className="d-flex align-items-baseline font-weight-lighter mb-1" >
                     <img width="42" height="42" src={locationIcon} className="mr-1" alt="location pin icon" />
-                    <span className="h1 font-weight-bold" >{location}</span>
+                    <span className="h5 font-weight-bold" >{location}</span>
                 </p>
             </div>
             <div>
