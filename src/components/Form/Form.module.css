@@ -1,9 +1,27 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('../CurrentDay/assets/mountain.jpg') no-repeat center; */
+    background: url('../CurrentDay/assets/nature-bg.jpeg') no-repeat center center/cover;
+    position: absolute;
+    min-width: 85%;
+    min-height: 85%;
+    border-radius: 1.5rem;
+    border: solid rgba(250, 250, 250, 250 .51) 1.5px;
+    box-shadow: 2.8px 1.6px 10px -2.5px rgba(250, 250, 250, 250);
+    top: 50;
+    left: 50;
+    /* z-index: -1; */
+}
+
 .input {
     border-radius: var(--main-border-radius);
-    margin-bottom: 1rem;
+    margin-bottom: 1.97rem;
 }
 
 .button {
+    margin-left: 1.8rem;
     border: none;
     border-radius: var(--main-border-radius);
     padding: 0.65rem;
@@ -13,13 +31,14 @@
     box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     line-height: initial;
-    width: 100%;
-    height: 38px;
+    width: 70%;
+    height: 3.5rem;
+
 }
 
 .button:hover {
     color: var(--main-text-color);
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }

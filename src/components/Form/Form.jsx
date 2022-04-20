@@ -17,21 +17,23 @@ const Form = ({ submitSearch }) => {
     };
     
     return (
-        <form onSubmit={handleSubmit} >
-            <input
-                aria-label="location"
-                type="text"
-                className={`${styles.input} form-control`}
-                placeholder="Search for location"
-                required
-                onChange={handleChange}
-                value={location}
-            />
+        <div className={styles.formContainer}>
+            <form onSubmit={handleSubmit} >
+                <input
+                    aria-label="location"
+                    type="text"
+                    className={`${styles.input} form-control`}
+                    placeholder="Search for location"
+                    required
+                    onChange={handleChange}
+                    value={location}
+                />
 
-            <button type="submit" className={styles.button} onClick={handleSubmit} >
-                SEARCH
-            </button>
-        </form>
+                <button type="submit" className={styles.button} onClick={handleSubmit} >
+                    SEARCH
+                </button>
+            </form>
+        </div>
     );
 };
 
