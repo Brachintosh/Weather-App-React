@@ -20,18 +20,20 @@ const Page = () => {
     return (
         <Fragment>
             <Header />
-           
-            <div className={styles.box}>
-                {/* FORM */}
-                { !isLoading && <Form submitSearch={onSumbit} /> }
-                {/* ERROR */}
-                { isError && <Error message={isError} /> }
-                {/* LOADER */}
-                {isLoading && <Loader /> }
-            </div>
-
+           {
+               !forecast && (
+                <div className={`${styles.box} position-relative`}>
+                    {/* FORM */}
+                    { !isLoading && <Form submitSearch={onSumbit} /> }
+                    {/* ERROR */}
+                    { isError && <Error message={isError} /> }
+                    {/* LOADER */}
+                    {isLoading && <Loader /> }
+                </div>
+               )
+           }
                 {/* FORECAST */}
-                { forecast && <Forecast /> }
+                { forecast && <Forecast forecast={forecast} /> }
 
         </Fragment>
     );
