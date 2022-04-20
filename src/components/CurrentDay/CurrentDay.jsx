@@ -12,12 +12,12 @@ const CurrentDay = ({
         <div className={styles.gradient}></div>
         <div className={`${styles.cardInner} d-flex flex-column justify-content-between pt-3 pb-2 pl-2`}>
             <div>
-                <h2 className="font-weight-bold mb-1">{weekday}</h2>
+                <h3 className="font-weight-bold mb-1">{weekday}</h3>
                 <p className="mb-0">{date}</p>{" "}
                 <p className="mb-0">{year}</p>
                 <p className="d-flex align-items-baseline font-weight-lighter mb-1" >
                     <img width="42" height="42" src={locationIcon} className="mr-1" alt="location pin icon" />
-                    <span >{location}</span>
+                    <span className="h1 font-weight-bold" >{location}</span>
                 </p>
             </div>
             <div>
