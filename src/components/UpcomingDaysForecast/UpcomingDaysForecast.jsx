@@ -9,18 +9,15 @@ const UpcomingDaysForecast = ({days}) => (
     
     <ul className={`${styles.weekList} d-flex justify-content-between p-0`}>
         {
-            days.map((day) => (
+            days?.map((day) => (
                 <UpcomingDaysForecastItem {...day} key={day.weekday} />
             ))
         }
     </ul>
 );
 
-UpcomingDaysForecastItem.propTypes = {
-    weekday: PropTypes.string.isRequired,
-    temperature: PropTypes.string.isRequired,
-    imgUrl: PropTypes.string.isRequired,
-    
+UpcomingDaysForecast.propTypes = {
+    days: PropTypes.array.isRequired,
 };
 
-export default UpcomingDaysForecastItem;
+export default UpcomingDaysForecast;
