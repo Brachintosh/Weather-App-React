@@ -7,7 +7,7 @@ import styles from './UpcomingDaysForecast.module.css';
 
 const UpcomingDaysForecast = ({days}) => (
     
-    <ul className={`${styles.weekList} d-flex justify-content-between p-2 mt-4 `}>
+    <ul className={`${styles.weekList} d-flex justify-content-between p-2 mt-4 mb-4 `}>
         {
             days?.map((day) => (
                 <UpcomingDaysForecastItem {...day} key={day.weekday} />
